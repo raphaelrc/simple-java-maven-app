@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Sonar') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.projectKey=simple-java-maven-app -Dsonar.host.url=http://localhost:9000 -Dsonar.login=34879617e359ea82f301296dd351012f560a3d0e'
+                sh 'mvn sonar:sonar -Dsonar.projectKey=simple-java-maven-app -Dsonar.host.url=http://10.3.202.213:9000 -Dsonar.login=34879617e359ea82f301296dd351012f560a3d0e'
             }
         }
         stage('Deliver') {
